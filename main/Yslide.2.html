@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>스와이퍼플러그인</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/w3.css">
+	<link href="../css/Yslide.css" rel="stylesheet">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/jquery.cycle2.min.js"></script>
+
+	<style>
+
+	
+	</style>
+</head>
+
+<body>
+	<!-- Slider main container -->
+<div class="swiper-container">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide img01"><img src="../img/kim04.jpg" alt="" class="img"></div>
+			<div class="swiper-slide img02"><img src="../img/kim05.jpg" alt="" class="img"></div>
+			<div class="swiper-slide img03"><img src="../img/kim06.jpg" alt="" class="img"></div>
+			<div class="swiper-slide img04"><img src="../img/kim07.jpg" alt="" class="img"></div>
+			<div class="swiper-slide img05"><img src="../img/kim08.jpg" alt="" class="img"></div>
+			...
+		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination"></div>
+	
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	
+		<!-- If we need scrollbar -->
+		<div class="swiper-scrollbar"></div>
+</div>
+
+<script>
+			var mainLayout = new Swiper(".swiper-container",{
+		 direction : "vertical",  // 방향. "horizontal" 또는 "vertical"
+		 loop : true,  // 순환하기
+		 mousewheel : {
+			 invert : true      // 마우스휠사용
+		 },
+		 // 페이져 만들기
+		 pagination : {   // html문서에서 만든 페이져 영역 설정하기
+			 el : ".main_pager",
+			 clickable : true   // 페이져 클릭 사용 
+		 },
+		 // 좌우버튼 만들기
+		 navigation : {   // html문서에서 만든 다음버튼 영역 설정하기	
+			 nextEl : ".main_btn_down",
+			 prevEl : ""
+		 }
+	 });
+		 </script>
+
+</body>
+
+</html>
